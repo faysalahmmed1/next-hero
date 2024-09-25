@@ -25,7 +25,7 @@ const Navber = () => {
     ]
     return (
         <nav className=' container bg-blue-500 py-5 px-5 flex justify-between items-center'>
-            <Link href={'/'}> <h1>Next Hero</h1></Link>
+            <Link href={'/'}> <h1>Next Hero !</h1></Link>
 
             <ul className='space-x-3'>
                 {
