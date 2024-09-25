@@ -2,8 +2,8 @@ import React from 'react';
 
 const page = () => {
     return (
-        <div className='h-screen'>
-            <h1>Service page !!</h1>
+        <div>
+            <h1>this is deshBoards page</h1>
         </div>
     );
 };
