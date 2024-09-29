@@ -25,8 +25,16 @@ const Navber = () => {
             path: '/contacts'
         },
         {
+            title:'Categories',
+            path:'/categories'
+        },
+        {
             title: 'Blogs',
-            path: 'blogs'
+            path: '/blogs'
+        },
+        {
+            title: 'Posts',
+            path: '/posts'
         }
     ];
     const loginHandler = () => {

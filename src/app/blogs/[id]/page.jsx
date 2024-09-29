@@ -1,16 +1,26 @@
-"use client"
+"use client";
 import React from 'react';
 
-const page = ({ params }) => {
-    const { title, description } = blogs.find((blog) => blog.id == params.id);
+const Page = ({ params }) => {
+    const blog = blogs.find((blog) => blog.id === parseInt(params.id));
+    
+    if (!blog) {
+        return (
+            <div className='h-screen container mx-auto my-12 p-12 bg-blue-50 text-black'>
+                <h1>Blog not found</h1>
+            </div>
+        );
+    }
+
+    const { title, description } = blog;
+
     return (
-        <div className='h-screen container mx-auto my-12 p-12 bg-blue-50 text-black '>
+        <div className='h-screen container mx-auto my-12 p-12 bg-blue-50 text-black'>
             <h1>{title}</h1>
-            <h1>{description}</h1>
+            <p>{description}</p>
         </div>
     );
 };
-
 
 const blogs = [
     {
@@ -40,4 +50,4 @@ const blogs = [
     }
 ];
 
-export default page;
+export default Page;

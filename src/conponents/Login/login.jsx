@@ -2,7 +2,7 @@ import React from 'react';
 
 const login = () => {
     return (
-        <div>
+        <div className='h-screen'>
             <h1> login</h1>
             <form>
                 <input type="text" name='email' placeholder='your email' />
