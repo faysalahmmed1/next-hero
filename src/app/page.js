@@ -1,5 +1,5 @@
-import HomePage from "@/conponents/HomePage/HomePage";
-import Navber from "@/conponents/Shared/Navber/Navber";
+import HomePage from "@/components/HomePage/HomePage";
+import Navber from "@/components/Shared/Navber/Navber";
 import Image from "next/image";
 
 export default function Home() {
