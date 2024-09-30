@@ -1,9 +1,18 @@
 import { getPost } from "@/serviceApi/PostApi";
 import Link from "next/link";
 
+export const metadata = {
+    title: {
+        absolute: 'Post Page'
+    },
+    description: 'hello from post page'
+}
+
+
 
 const page = async () => {
     const Posts = await getPost();
+
     return (
         <div>
             <div className="grid grid-cols-3 gap-5 p-5">
