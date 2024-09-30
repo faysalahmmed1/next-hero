@@ -1,4 +1,4 @@
-import MealsDB from '@/conponents/MealsDB/mealsDB';
+import MealsDB from '@/components/MealsDB/mealsDB';
 import React from 'react';
 
 const page = () => {
